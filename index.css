@@ -9,14 +9,6 @@ h1 {
     font-size: 30px;
 }
 
-h3 {
-    color: red;
-}
-
-p { 
-    color: brown;
-}
-
 .centered-row {
     display: flex;
     justify-content: space-between;
@@ -44,8 +36,8 @@ nav > .nav-item {
     background-color: white;
     border-radius: 8px;
     text-align: center;
-
 }
+
 .color-text{
     color: lawngreen;
 }
