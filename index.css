@@ -40,4 +40,12 @@ nav > .nav-item {
 
 .content {
     margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.color-text{
+    color: lawngreen;
 }
