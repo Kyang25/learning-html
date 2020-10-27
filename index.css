@@ -14,9 +14,15 @@ h3 {
 p { 
     color: brown;
 }
-#pictureLandon {
-    width: 200px;
-    
+#headerWrapper{
+    display: flex;
+   
+}
+#headerLogo {
+    width: 300px;
+    float: right;
+    border: 1px solid black;
+    padding: 50px;
 }
 nav {
     display: flex;
