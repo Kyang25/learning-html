@@ -18,6 +18,27 @@ a:visited {
     color: blue;
 }
 
+.card {
+    padding: 2em;
+    background-color: white;
+}
+
+.col-70 {
+    width: 68%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+img {
+    width: 100%;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
 #header {
     color: whitesmoke;
     display: flex;
@@ -60,13 +81,6 @@ nav > a:hover {
     margin: 1em;
 }
 
-#resume {
-    padding: 2em;
-    background-color: white;
-    border-radius: 12px;
-    width: 68%;
-}
-
 #resume > h1 {
     font-size: 3em;
     text-align: center;
@@ -74,13 +88,6 @@ nav > a:hover {
 
 #resume > h2 {
     margin-top: 1.5em;
-}
-
-#sidebar {
-    padding: 2em;
-    background-color: white;
-    border-radius: 12px;
-    width: 30%;
 }
 
 #sidebar > ul {
