@@ -1,13 +1,18 @@
+:root {
+    --primary: rgba(0,88,145,1);
+    --secondary: rgba(31,31,31,1);
+}
+
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
     margin: 0 8em 0 8em;
-    background:rgb(0,88,145);
-    background: linear-gradient(0deg, rgba(0,88,145,1) 0%, rgba(31,31,31,1) 100%);
-    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    background:rgb(0,88,145);
+    background: linear-gradient(0deg, var(--primary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
 }
 
 a {
@@ -27,13 +32,54 @@ form {
     flex-direction: column;
 }
 
+form > h3 {
+    text-decoration: underline;
+}
+
+form > input[type="text"],
+form > input[type="url"],
+form > input[type="email"],
+form > input[type="submit"],
+textarea,
+select
+{
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+form > input[type="submit"] {
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form > sub {
+    text-align: center;
+}
+
+form > sub > a {
+    color: red;
+}
+
+input[type="submit"] {
+    margin-top: 2em;
+}
+
 .centered {
-    margin: auto;
+    margin: auto !important;
 }
 
 .card {
     padding: 2em;
     background-color: white;
+    margin-bottom: 3rem !important;
 }
 
 .col-70 {

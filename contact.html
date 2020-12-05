@@ -22,33 +22,81 @@
             </nav>
         </div>
         <div id="content">
-            <div class="card rounded ">
-                <form>
-                    <label for="fullName">Full name: </label>
+            <div class="card rounded col-30 centered">
+
+                <h1>Contact me</h1>
+                
+                <form  id="contactForm" action="https://www.hashemian.com/tools/form-post-tester.php" method="POST">
+
+                    <h3>Basic information</h3>
+                    
+                    <label for="fullName">Full name</label>
                     <input type="text" name="fullName">
 
-                    <label for="email">Email: </label>
+                    <label for="email">Email</label>
                     <input type="email" name="email">
 
-                    <label for="url">Homepage URL: </label>
+                    <label for="url">Homepage URL</label>
                     <input type="url" name="url">
 
-                    <label for="city">City: </label>
+                    <label for="city">City</label>
                     <input type="text" name="city">
 
-                    <label for="state">State: </label>
+                    <label for="state">State</label>
                     <input type="text" name="state">
 
-                    <input type="radio" name="siteRating" value="poor"><label>Poor</label></input>
-                    <input type="radio" name="siteRating" value="fair"><label>Fair</label></input>
-                    <input type="radio" name="siteRating" value="good"><label>Good</label></input>
-                    <input type="radio" name="siteRating" value="excellent"><label>Excellent</label></input>
+
+                    <h3>Site rating</h3>
+
+                    <label for="siteRating"><input type="radio" name="siteRating" value="poor">Poor</label>
+                    <label for="siteRating"><input type="radio" name="siteRating" value="fair">Fair</label>
+                    <label for="siteRating"><input type="radio" name="siteRating" value="good">Good</label>
+                    <label for="siteRating"><input type="radio" name="siteRating" value="excellent">Excellent</label>
                     
 
+                    <h3>Feedback</h3>
 
+                    <textarea name="feedback" rows="4" cols="50"></textarea>
+
+
+                    <h3>Operating systems you use</h3>
+
+                    <label><input type="checkbox" name="windowsXP" /> Windows XP</label>
+                    <label><input type="checkbox" name="windowsVista" /> Windows Vista</label>
+                    <label><input type="checkbox" name="windows7" /> Windows 7</label>
+                    <label><input type="checkbox" name="os10" /> OS 10</label>
+                    <label><input type="checkbox" name="unix" /> Unix</label>
+
+
+                    <h3>Current OS</h3>
+
+                    <select name="myOS">
+                        <option disabled selected>Choose operating system</option>
+                        <option>Windows XP</option>
+                        <option>Windows Vista</option>
+                        <option>Windows 7</option>
+                        <option>OS 10</option>
+                        <option>Unix</option>
+                    </select>
+
+
+                    <input type="submit" />
+
+                    <sub><a href="javascript:resetForm()">reset</a></sub>
 
                 </form>
             </div>
         </div>
     </body>
+    <script>
+        const resetForm = () => {
+
+            const clearConfirm = confirm('Are you sure you want to clear the form?');
+            
+            if (clearConfirm) {
+                document.getElementById('contactForm').reset();
+            }
+
+        }
+    </script>
 </html>
